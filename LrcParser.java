@@ -19,7 +19,7 @@ public class LrcParser {
 
         @Deprecated
         public void test() {
-            String path = "さユり - 十億年_vip.lrc"; // 歌词文件路径
+            String path = "xxxxxxx.lrc"; // 歌词文件路径
             LrcParser lrc = new LrcParser();
             List<Map<Long, String>> list = lrc.parse(path);
             lrc.printLrc(list);
