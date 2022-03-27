@@ -1,4 +1,4 @@
-# project source-engine (1.0) configured on Sun Mar 27 20:13:34 2022 by
+# project source-engine (1.0) configured on Sun Mar 27 22:05:52 2022 by
 # waf 2.0.22 (abi 20, python 20705f0 on linux2)
 # using ./waf configure -T debug --android=armeabi-v7a,4.9,21
 #
@@ -1321,7 +1321,7 @@ int main(int argc, char **argv) {
 ['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++', '--sysroot=/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/platforms/android-21/arch-arm', '-Wl,--hash-style=both', '-Wl,--no-undefined', '-fPIC', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/lib/android/armeabi-v7a/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/curl/include', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/SDL', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/openal-soft/include/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/fontconfig', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/freetype/include', '-llog', '-lz', '-fsigned-char', '-pthread', 'test.cpp.1.o', '-o', '/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/build/.conf_check_d20a7fc4d5c50fbb5a6e62d495c4aa49/testbuild/testprog', '-Wl,-Bstatic', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/sources/cxx-stl/stlport/libs/armeabi-v7a', '-Wl,-Bdynamic', '-landroid_support', '-lgcc', '-no-canonical-prefixes', '-march=armv7-a', '-mthumb', '-Wl,--fix-cortex-a8', '-lstlport_static']
 yes
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-Checking for library opus
+Checking for library dl
 ==>
 
 int main(int argc, char **argv) {
@@ -1330,13 +1330,47 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_20d7e99c85bea9769a5e0540aefd838d/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_6c8b7b9fc3fa2f4dff2e276a3164420b/test.c[0m
 
-['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++', '--sysroot=/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/platforms/android-21/arch-arm', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/sources/cxx-stl/stlport/stlport', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/sources/android/support/include', '-DANDROID', '-D__ANDROID__', '-mthumb', '-mfpu=neon-vfpv4', '-mcpu=cortex-a7', '-mtune=cortex-a7', '-DHAVE_EFFICIENT_UNALIGNED_ACCESS', '-DVECTORIZE_SINCOS', '-mvectorize-with-neon-quad', '-mfloat-abi=softfp', '-g0', '-fvisibility=hidden', '-O3', '-fPIC', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/lib/android/armeabi-v7a/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/curl/include', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/SDL', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/openal-soft/include/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/fontconfig', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/freetype/include', '-llog', '-lz', '-fsigned-char', '-std=c++11', '-fpermissive', '-pipe', '-Wall', '-fdiagnostics-color=always', '-Wcast-align', '-Wuninitialized', '-Winit-self', '-Wstrict-aliasing', '-I../../../common', '-DDX_TO_GL_ABSTRACTION', '-DGL_GLEXT_PROTOTYPES', '-DBINK_VIDEO', '-DUSE_SDL=1', '-DANDROID=1', '-D_ANDROID=1', '-DLINUX=1', '-D_LINUX=1', '-DPOSIX=1', '-D_POSIX=1', '-DGNUC', '-DNO_HOOK_MALLOC', '-D_DLL_EXT=.so', '-DNDEBUG', '-DCOMPILER_GCC=1', '../test.cpp', '-c', '-o/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/build/.conf_check_20d7e99c85bea9769a5e0540aefd838d/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_20d7e99c85bea9769a5e0540aefd838d/testbuild/testprog[0m
+['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc', '--sysroot=/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/platforms/android-21/arch-arm', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/sources/cxx-stl/stlport/stlport', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/sources/android/support/include', '-DANDROID', '-D__ANDROID__', '-mthumb', '-mfpu=neon-vfpv4', '-mcpu=cortex-a7', '-mtune=cortex-a7', '-DHAVE_EFFICIENT_UNALIGNED_ACCESS', '-DVECTORIZE_SINCOS', '-mvectorize-with-neon-quad', '-mfloat-abi=softfp', '-g0', '-fvisibility=hidden', '-O3', '-fPIC', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/lib/android/armeabi-v7a/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/curl/include', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/SDL', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/openal-soft/include/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/fontconfig', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/freetype/include', '-llog', '-lz', '-fsigned-char', '-pipe', '-Wall', '-fdiagnostics-color=always', '-Wcast-align', '-Wuninitialized', '-Winit-self', '-Wstrict-aliasing', '-I../../../common', '-DDX_TO_GL_ABSTRACTION', '-DGL_GLEXT_PROTOTYPES', '-DBINK_VIDEO', '-DUSE_SDL=1', '-DANDROID=1', '-D_ANDROID=1', '-DLINUX=1', '-D_LINUX=1', '-DPOSIX=1', '-D_POSIX=1', '-DGNUC', '-DNO_HOOK_MALLOC', '-D_DLL_EXT=.so', '-DNDEBUG', '-DCOMPILER_GCC=1', '../test.c', '-c', '-o/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/build/.conf_check_6c8b7b9fc3fa2f4dff2e276a3164420b/testbuild/test.c.1.o']
+[2/2] Linking [33mbuild/.conf_check_6c8b7b9fc3fa2f4dff2e276a3164420b/testbuild/testprog[0m
 
-['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-g++', '--sysroot=/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/platforms/android-21/arch-arm', '-Wl,--hash-style=both', '-Wl,--no-undefined', '-fPIC', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/lib/android/armeabi-v7a/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/curl/include', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/SDL', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/openal-soft/include/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/fontconfig', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/freetype/include', '-llog', '-lz', '-fsigned-char', '-pthread', 'test.cpp.1.o', '-o', '/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/build/.conf_check_20d7e99c85bea9769a5e0540aefd838d/testbuild/testprog', '-Wl,-Bstatic', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/sources/cxx-stl/stlport/libs/armeabi-v7a', '-Wl,-Bdynamic', '-lopus', '-lgcc', '-no-canonical-prefixes', '-march=armv7-a', '-mthumb', '-Wl,--fix-cortex-a8', '-lstlport_static']
-err: /home/srcengbuild/公共/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld: error: cannot find -lopus
+['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc', '--sysroot=/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/platforms/android-21/arch-arm', '-Wl,--hash-style=both', '-Wl,--no-undefined', '-fPIC', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/lib/android/armeabi-v7a/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/curl/include', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/SDL', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/openal-soft/include/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/fontconfig', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/freetype/include', '-llog', '-lz', '-fsigned-char', '-pthread', 'test.c.1.o', '-o', '/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/build/.conf_check_6c8b7b9fc3fa2f4dff2e276a3164420b/testbuild/testprog', '-Wl,-Bstatic', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/sources/cxx-stl/stlport/libs/armeabi-v7a', '-Wl,-Bdynamic', '-ldl', '-lgcc', '-no-canonical-prefixes', '-march=armv7-a', '-mthumb', '-Wl,--fix-cortex-a8', '-lstlport_static']
+yes
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Checking for library bz2
+==>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] Compiling [32mbuild/.conf_check_4e3fe813488acc8a788be8148fd35bed/test.c[0m
+
+['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc', '--sysroot=/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/platforms/android-21/arch-arm', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/sources/cxx-stl/stlport/stlport', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/sources/android/support/include', '-DANDROID', '-D__ANDROID__', '-mthumb', '-mfpu=neon-vfpv4', '-mcpu=cortex-a7', '-mtune=cortex-a7', '-DHAVE_EFFICIENT_UNALIGNED_ACCESS', '-DVECTORIZE_SINCOS', '-mvectorize-with-neon-quad', '-mfloat-abi=softfp', '-g0', '-fvisibility=hidden', '-O3', '-fPIC', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/lib/android/armeabi-v7a/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/curl/include', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/SDL', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/openal-soft/include/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/fontconfig', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/freetype/include', '-llog', '-lz', '-fsigned-char', '-pipe', '-Wall', '-fdiagnostics-color=always', '-Wcast-align', '-Wuninitialized', '-Winit-self', '-Wstrict-aliasing', '-I../../../common', '-DDX_TO_GL_ABSTRACTION', '-DGL_GLEXT_PROTOTYPES', '-DBINK_VIDEO', '-DUSE_SDL=1', '-DANDROID=1', '-D_ANDROID=1', '-DLINUX=1', '-D_LINUX=1', '-DPOSIX=1', '-D_POSIX=1', '-DGNUC', '-DNO_HOOK_MALLOC', '-D_DLL_EXT=.so', '-DNDEBUG', '-DCOMPILER_GCC=1', '../test.c', '-c', '-o/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/build/.conf_check_4e3fe813488acc8a788be8148fd35bed/testbuild/test.c.1.o']
+[2/2] Linking [33mbuild/.conf_check_4e3fe813488acc8a788be8148fd35bed/testbuild/testprog[0m
+
+['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc', '--sysroot=/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/platforms/android-21/arch-arm', '-Wl,--hash-style=both', '-Wl,--no-undefined', '-fPIC', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/lib/android/armeabi-v7a/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/curl/include', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/SDL', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/openal-soft/include/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/fontconfig', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/freetype/include', '-llog', '-lz', '-fsigned-char', '-pthread', 'test.c.1.o', '-o', '/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/build/.conf_check_4e3fe813488acc8a788be8148fd35bed/testbuild/testprog', '-Wl,-Bstatic', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/sources/cxx-stl/stlport/libs/armeabi-v7a', '-Wl,-Bdynamic', '-lbz2', '-lgcc', '-no-canonical-prefixes', '-march=armv7-a', '-mthumb', '-Wl,--fix-cortex-a8', '-lstlport_static']
+yes
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Checking for library rt
+==>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] Compiling [32mbuild/.conf_check_b73995a7a9fdd02e13be241eb425cd8f/test.c[0m
+
+['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc', '--sysroot=/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/platforms/android-21/arch-arm', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/sources/cxx-stl/stlport/stlport', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/sources/android/support/include', '-DANDROID', '-D__ANDROID__', '-mthumb', '-mfpu=neon-vfpv4', '-mcpu=cortex-a7', '-mtune=cortex-a7', '-DHAVE_EFFICIENT_UNALIGNED_ACCESS', '-DVECTORIZE_SINCOS', '-mvectorize-with-neon-quad', '-mfloat-abi=softfp', '-g0', '-fvisibility=hidden', '-O3', '-fPIC', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/lib/android/armeabi-v7a/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/curl/include', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/SDL', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/openal-soft/include/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/fontconfig', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/freetype/include', '-llog', '-lz', '-fsigned-char', '-pipe', '-Wall', '-fdiagnostics-color=always', '-Wcast-align', '-Wuninitialized', '-Winit-self', '-Wstrict-aliasing', '-I../../../common', '-DDX_TO_GL_ABSTRACTION', '-DGL_GLEXT_PROTOTYPES', '-DBINK_VIDEO', '-DUSE_SDL=1', '-DANDROID=1', '-D_ANDROID=1', '-DLINUX=1', '-D_LINUX=1', '-DPOSIX=1', '-D_POSIX=1', '-DGNUC', '-DNO_HOOK_MALLOC', '-D_DLL_EXT=.so', '-DNDEBUG', '-DCOMPILER_GCC=1', '../test.c', '-c', '-o/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/build/.conf_check_b73995a7a9fdd02e13be241eb425cd8f/testbuild/test.c.1.o']
+[2/2] Linking [33mbuild/.conf_check_b73995a7a9fdd02e13be241eb425cd8f/testbuild/testprog[0m
+
+['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc', '--sysroot=/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/platforms/android-21/arch-arm', '-Wl,--hash-style=both', '-Wl,--no-undefined', '-fPIC', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/lib/android/armeabi-v7a/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/curl/include', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/SDL', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/openal-soft/include/', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/fontconfig', '-I/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/thirdparty/freetype/include', '-llog', '-lz', '-fsigned-char', '-pthread', 'test.c.1.o', '-o', '/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/build/.conf_check_b73995a7a9fdd02e13be241eb425cd8f/testbuild/testprog', '-Wl,-Bstatic', '-L/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/android-ndk-r10e/sources/cxx-stl/stlport/libs/armeabi-v7a', '-Wl,-Bdynamic', '-lrt', '-lgcc', '-no-canonical-prefixes', '-march=armv7-a', '-mthumb', '-Wl,--fix-cortex-a8', '-lstlport_static']
+err: /home/srcengbuild/公共/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld: error: cannot find -lrt
 collect2: error: ld returned 1 exit status
 
 from /home/srcengbuild/公共/source-engine-master: Test does not build: Traceback (most recent call last):
@@ -1349,3 +1383,84 @@ BuildError: Build failed
 
 not found
 from /home/srcengbuild/公共/source-engine-master: The configuration failed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> appframework
+in progress
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<-- appframework
+done
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> bitmap
+in progress
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<-- bitmap
+done
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> choreoobjects
+in progress
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<-- choreoobjects
+done
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> datacache
+in progress
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<-- datacache
+done
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> datamodel
+in progress
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<-- datamodel
+done
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> dmxloader
+in progress
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<-- dmxloader
+done
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> engine
+in progress
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<-- engine
+done
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> engine/voice_codecs/minimp3
+in progress
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<-- engine/voice_codecs/minimp3
+done
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> filesystem
+in progress
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<-- filesystem
+done
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> game/client
+in progress
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<-- game/client
+done
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> game/server
+in progress
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<-- game/server
+done
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> gameui
+in progress
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<-- gameui
+done
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> inputsystem
+in progress
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+<-- inputsystem
+done
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--> ivp/havana
+in progress
