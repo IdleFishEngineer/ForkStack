@@ -13,7 +13,7 @@ Selected Android NDK
 home/srcengbuild/ENV/android-ndk-r10e, version: 10
 -------------------------------------------------------
 ... C/C++ flags
---sysroot=/home/srcengbuild/public/source-engine-master/$NDK//platforms/android-21/arch-arm -I/home/srcengbuild/public/source-engine-master/$NDK//sources/cxx-stl/stlport/stlport -I/home/srcengbuild/公共/source-engine-master/$NDK//sources/android/support/include -DANDROID -D__ANDROID__ -mthumb -mfpu=neon-vfpv4 -mcpu=cortex-a7 -mtune=cortex-a7 -DHAVE_EFFICIENT_UNALIGNED_ACCESS -DVECTORIZE_SINCOS -mvectorize-with-neon-quad -mfloat-abi=softfp
+--sysroot=/home/srcengbuild/public/source-engine-master/$NDK//platforms/android-21/arch-arm -I/home/srcengbuild/public/source-engine-master/$NDK//sources/cxx-stl/stlport/stlport -I/home/srcengbuild/public/source-engine-master/$NDK//sources/android/support/include -DANDROID -D__ANDROID__ -mthumb -mfpu=neon-vfpv4 -mcpu=cortex-a7 -mtune=cortex-a7 -DHAVE_EFFICIENT_UNALIGNED_ACCESS -DVECTORIZE_SINCOS -mvectorize-with-neon-quad -mfloat-abi=softfp
 -------------------------------------------------------
 ... link flags
 --sysroot=/home/srcengbuild/public/source-engine-master/$NDK//platforms/android-21/arch-arm -Wl,--hash-style=both -Wl,--no-undefined
@@ -23,7 +23,7 @@ home/srcengbuild/ENV/android-ndk-r10e, version: 10
 -------------------------------------------------------
 Checking for 'gcc' (C compiler)
 find program=['gcc', 'cc'] paths=['/usr/lib64/qt-3.3/bin', '/usr/local/bin', '/usr/local/sbin', '/usr/bin', '/usr/sbin', '/bin', '/sbin', '/home/srcengbuild/.local/bin', '/home/srcengbuild/bin'] var='CC' -> ['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/home/srcengbuild/ENV/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc']
-from /home/srcengbuild/公共/source-engine-master: Program ['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/home/srcengbuild/ENV/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc'] is not executable
+from /home/srcengbuild/public/source-engine-master: Program ['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/home/srcengbuild/ENV/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc'] is not executable
 not found
 -------------------------------------------------------
 Checking for 'clang' (C compiler)
