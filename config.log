@@ -1,0 +1,38 @@
+# project source-engine (1.0) configured on Sun Mar 27 15:27:28 2022 by
+# waf 2.0.22 (abi 20, python 20705f0 on linux2)
+# using ./waf configure -T debug --android=armeabi-v7a,4.9,21
+#
+-------------------------------------------------------
+Setting top to
+/home/srcengbuild/公共/source-engine-master
+-------------------------------------------------------
+Setting out to
+/home/srcengbuild/公共/source-engine-master/build
+-------------------------------------------------------
+Selected Android NDK
+home/srcengbuild/ENV/android-ndk-r10e, version: 10
+-------------------------------------------------------
+... C/C++ flags
+--sysroot=/home/srcengbuild/公共/source-engine-master/$NDK//platforms/android-21/arch-arm -I/home/srcengbuild/公共/source-engine-master/$NDK//sources/cxx-stl/stlport/stlport -I/home/srcengbuild/公共/source-engine-master/$NDK//sources/android/support/include -DANDROID -D__ANDROID__ -mthumb -mfpu=neon-vfpv4 -mcpu=cortex-a7 -mtune=cortex-a7 -DHAVE_EFFICIENT_UNALIGNED_ACCESS -DVECTORIZE_SINCOS -mvectorize-with-neon-quad -mfloat-abi=softfp
+-------------------------------------------------------
+... link flags
+--sysroot=/home/srcengbuild/公共/source-engine-master/$NDK//platforms/android-21/arch-arm -Wl,--hash-style=both -Wl,--no-undefined
+-------------------------------------------------------
+... ld flags
+-lgcc -no-canonical-prefixes -march=armv7-a -mthumb -Wl,--fix-cortex-a8
+-------------------------------------------------------
+Checking for 'gcc' (C compiler)
+find program=['gcc', 'cc'] paths=['/usr/lib64/qt-3.3/bin', '/usr/local/bin', '/usr/local/sbin', '/usr/bin', '/usr/sbin', '/bin', '/sbin', '/home/srcengbuild/.local/bin', '/home/srcengbuild/bin'] var='CC' -> ['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/home/srcengbuild/ENV/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc']
+from /home/srcengbuild/公共/source-engine-master: Program ['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/home/srcengbuild/ENV/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc'] is not executable
+not found
+-------------------------------------------------------
+Checking for 'clang' (C compiler)
+find program=['clang'] paths=['/usr/lib64/qt-3.3/bin', '/usr/local/bin', '/usr/local/sbin', '/usr/bin', '/usr/sbin', '/bin', '/sbin', '/home/srcengbuild/.local/bin', '/home/srcengbuild/bin'] var='CC' -> ['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/home/srcengbuild/ENV/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc']
+from /home/srcengbuild/公共/source-engine-master: Program ['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/home/srcengbuild/ENV/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc'] is not executable
+not found
+-------------------------------------------------------
+Checking for 'icc' (C compiler)
+find program=['icc', 'ICL'] paths=['/usr/lib64/qt-3.3/bin', '/usr/local/bin', '/usr/local/sbin', '/usr/bin', '/usr/sbin', '/bin', '/sbin', '/home/srcengbuild/.local/bin', '/home/srcengbuild/bin'] var='CC' -> ['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/home/srcengbuild/ENV/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc']
+from /home/srcengbuild/公共/source-engine-master: Program ['/home/srcengbuild/\xe5\x85\xac\xe5\x85\xb1/source-engine-master/home/srcengbuild/ENV/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-gcc'] is not executable
+not found
+from /home/srcengbuild/公共/source-engine-master: could not configure a C compiler!
